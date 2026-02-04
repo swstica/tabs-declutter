@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs Declutter</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Tabs Declutter</h1>
+      <p class="subtitle">Capture and organize your tabs</p>
+    </header>
+
+    <div class="status-section" id="statusSection">
+      <div class="status-item">
+        <span class="label">Open tabs:</span>
+        <span class="value" id="tabCount">-</span>
+      </div>
+      <div class="status-item" id="lastCaptureItem" style="display: none;">
+        <span class="label">Last capture:</span>
+        <span class="value" id="lastCapture">-</span>
+      </div>
+    </div>
+
+    <div class="actions-section">
+      <button id="captureAllBtn" class="btn btn-primary">
+        <span class="btn-icon">📚</span>
+        Capture All Tabs
+      </button>
+      <button id="captureCurrentBtn" class="btn btn-secondary">
+        <span class="btn-icon">📄</span>
+        Capture Current Tab
+      </button>
+    </div>
+
+    <div class="message" id="message" style="display: none;"></div>
+
+    <div class="settings-section">
+      <button id="settingsBtn" class="btn btn-link">
+        ⚙️ Settings
+      </button>
+    </div>
+
+    <!-- Settings Modal -->
+    <div class="modal" id="settingsModal" style="display: none;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Settings</h2>
+          <button class="close-btn" id="closeModalBtn">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="apiUrl">API URL</label>
+            <input 
+              type="text" 
+              id="apiUrl" 
+              placeholder="https://your-app.gadget.app"
+              class="input"
+            />
+            <small class="help-text">Your Gadget.dev app URL</small>
+          </div>
+          <div class="form-group">
+            <label for="apiKey">API Key</label>
+            <input 
+              type="password" 
+              id="apiKey" 
+              placeholder="Enter your API key"
+              class="input"
+            />
+            <small class="help-text">Your Gadget.dev API key (stored securely)</small>
+          </div>
+          <div class="form-actions">
+            <button type="button" id="saveSettingsBtn" class="btn btn-primary">Save Settings</button>
+            <button type="button" id="cancelSettingsBtn" class="btn btn-secondary">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
