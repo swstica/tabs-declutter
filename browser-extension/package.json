@@ -1,0 +1,17 @@
+{
+  "name": "tabs-declutter-extension",
+  "version": "1.0.0",
+  "description": "Browser extension for Tabs Declutter - Capture and organize your browser tabs",
+  "scripts": {
+    "package": "zip -r tabs-declutter-extension.zip . -x '*.git*' -x 'node_modules/*' -x '*.zip' -x '*.md'"
+  },
+  "keywords": [
+    "browser-extension",
+    "tabs",
+    "productivity",
+    "gadget"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+
