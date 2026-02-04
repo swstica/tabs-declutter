@@ -1,0 +1,26 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE files
+.vscode/
+.idea/
+.cursor/
+.claude/
+*.swp
+*.swo
+*~
+
+# Build files
+*.zip
+*.crx
+*.pem
+
+# Logs
+*.log
+
+# Node modules (if you add build tools later)
+node_modules/
+package-lock.json
+yarn.lock
+
