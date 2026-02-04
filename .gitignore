@@ -1,0 +1,20 @@
+# IDE/Editor configuration
+.cursor/
+.claude/
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Node modules (if any at root level)
+node_modules/
