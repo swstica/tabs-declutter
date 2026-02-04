@@ -81,7 +81,7 @@ export const createMCPServer = async (request: FastifyRequest) => {
       // Get user's tab sessions summary
       const sessions = await api.declutterSession.findMany({
         filter: {
-          user: { equals: currentUserId },
+          user: { id: { equals: currentUserId } },
         },
         sort: { startedAt: "Descending" },
         first: 5,
