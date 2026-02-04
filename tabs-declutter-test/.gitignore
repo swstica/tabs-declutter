@@ -1,0 +1,26 @@
+# Gadget generated files
+.gadget/
+
+# Dependencies
+node_modules/
+
+# OS files
+**/.DS_Store
+Thumbs.db
+
+# React Router cache
+.react-router/
+
+# IDE/Editor files
+.cursor/
+.claude/
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
